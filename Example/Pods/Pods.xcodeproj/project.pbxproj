@@ -182,6 +182,17 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		22FBF63623BB4E6800F0C2DB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				22FBF62A23BB42EA00F0C2DB /* GeofencePermission.swift */,
+				22FBF62D23BB42EB00F0C2DB /* GeofencingModel.swift */,
+				22FBF62B23BB42EA00F0C2DB /* GeofencingProtocol.swift */,
+				22FBF62C23BB42EB00F0C2DB /* GeofencingRegion.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		33898962563ED83CF20ADD0268AFD161 /* Pods-GeofencingRegion_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,10 +227,7 @@
 		69D7C6D22B3EAA5F993F72656BF569D5 /* GeofencingRegion */ = {
 			isa = PBXGroup;
 			children = (
-				22FBF62A23BB42EA00F0C2DB /* GeofencePermission.swift */,
-				22FBF62D23BB42EB00F0C2DB /* GeofencingModel.swift */,
-				22FBF62B23BB42EA00F0C2DB /* GeofencingProtocol.swift */,
-				22FBF62C23BB42EB00F0C2DB /* GeofencingRegion.swift */,
+				22FBF63623BB4E6800F0C2DB /* Classes */,
 				C1789C13140DF45C471C20126C7BCABF /* Pod */,
 				FF6A594080C667C9EF42B010CEC98DE0 /* Support Files */,
 			);
