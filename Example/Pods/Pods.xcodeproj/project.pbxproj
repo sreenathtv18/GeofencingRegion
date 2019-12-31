@@ -12,6 +12,14 @@
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
+		22FBF62E23BB42EB00F0C2DB /* GeofencePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBF62A23BB42EA00F0C2DB /* GeofencePermission.swift */; };
+		22FBF62F23BB42EB00F0C2DB /* GeofencePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBF62A23BB42EA00F0C2DB /* GeofencePermission.swift */; };
+		22FBF63023BB42EB00F0C2DB /* GeofencingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBF62B23BB42EA00F0C2DB /* GeofencingProtocol.swift */; };
+		22FBF63123BB42EB00F0C2DB /* GeofencingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBF62B23BB42EA00F0C2DB /* GeofencingProtocol.swift */; };
+		22FBF63223BB42EB00F0C2DB /* GeofencingRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBF62C23BB42EB00F0C2DB /* GeofencingRegion.swift */; };
+		22FBF63323BB42EB00F0C2DB /* GeofencingRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBF62C23BB42EB00F0C2DB /* GeofencingRegion.swift */; };
+		22FBF63423BB42EB00F0C2DB /* GeofencingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBF62D23BB42EB00F0C2DB /* GeofencingModel.swift */; };
+		22FBF63523BB42EB00F0C2DB /* GeofencingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBF62D23BB42EB00F0C2DB /* GeofencingModel.swift */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4C459C9220982D182076A82B44673707 /* GeofencingRegion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4F6B8C0C04446D593F3F7E516F1FFA /* GeofencingRegion-dummy.m */; };
@@ -20,7 +28,6 @@
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */; };
 		73B37FAE9B65FC42D1A3B4EA2254717E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		76444A3FEFA9E28FDDB0FEA50EB684E4 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74BB8B24CFD3DBBF4E724922637289B /* ReplaceMe.swift */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88EE4F95531D217A595AA8D85A24FA39 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,28 +74,32 @@
 /* Begin PBXFileReference section */
 		0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		0F9F29872A5409A90706DBA52B6D17D7 /* Pods-GeofencingRegion_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofencingRegion_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		10022B94080D3C081FE6F5FDFA90F119 /* Pods_GeofencingRegion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeofencingRegion_Tests.framework; path = "Pods-GeofencingRegion_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10022B94080D3C081FE6F5FDFA90F119 /* Pods_GeofencingRegion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofencingRegion_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		1532A7E0E5C649EA4A56C60DCC0A2CDA /* Pods-GeofencingRegion_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeofencingRegion_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1B35E220CDEE19284828D87E0DF0972A /* Pods-GeofencingRegion_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofencingRegion_Example-Info.plist"; sourceTree = "<group>"; };
 		1B8ABEEA76ECDF1975B6D0787700F929 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		1F47B5622013BE06DE3F36468D1AFAAB /* GeofencingRegion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeofencingRegion.xcconfig; sourceTree = "<group>"; };
 		20F41F4B9FF31881448A22A2D86A33B9 /* Pods-GeofencingRegion_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofencingRegion_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		22FBF62A23BB42EA00F0C2DB /* GeofencePermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofencePermission.swift; sourceTree = "<group>"; };
+		22FBF62B23BB42EA00F0C2DB /* GeofencingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofencingProtocol.swift; sourceTree = "<group>"; };
+		22FBF62C23BB42EB00F0C2DB /* GeofencingRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofencingRegion.swift; sourceTree = "<group>"; };
+		22FBF62D23BB42EB00F0C2DB /* GeofencingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofencingModel.swift; sourceTree = "<group>"; };
 		23804760EF64643E33CC07C55B410D62 /* Pods-GeofencingRegion_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeofencingRegion_Example.modulemap"; sourceTree = "<group>"; };
 		252A870DBBF35C2A4C06BD5F146483BA /* GeofencingRegion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GeofencingRegion-prefix.pch"; sourceTree = "<group>"; };
 		2C02956853A0577A6832932D99275BDF /* Pods-GeofencingRegion_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeofencingRegion_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		3B6472DE99E89FF6E436941D67947D6F /* Pods-GeofencingRegion_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofencingRegion_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3E29C50D3CDB46CBCBD20AFA13EB3D8D /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		3FCF881AB184742F7EA2343209DF8C33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3FCF881AB184742F7EA2343209DF8C33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		418E0471655A8CDB5EB2C290498D2FD3 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		4FAA72924E4613A4FBC88D94F84DED0F /* GeofencingRegion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GeofencingRegion-umbrella.h"; sourceTree = "<group>"; };
 		525AB2244DD8F019F6692E3D02E378A9 /* Pods-GeofencingRegion_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofencingRegion_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		60B7A233722CC41AB7B144656FE16D35 /* Pods-GeofencingRegion_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeofencingRegion_Tests-dummy.m"; sourceTree = "<group>"; };
 		6D5D5CA5F1574665228DA2F6CE940054 /* Pods-GeofencingRegion_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeofencingRegion_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6EAA7F435E2EF089D432C30CA85E4FEF /* GeofencingRegion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GeofencingRegion.framework; path = GeofencingRegion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAA7F435E2EF089D432C30CA85E4FEF /* GeofencingRegion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GeofencingRegion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		746CC9C9E1B0E104CD1BA120C69A2526 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		751118DC72F3ACBA8229F6B34113E219 /* Pods-GeofencingRegion_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeofencingRegion_Example-dummy.m"; sourceTree = "<group>"; };
@@ -98,20 +109,20 @@
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		92D653690544C174352EFAD54CB26834 /* Pods-GeofencingRegion_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeofencingRegion_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9564DCF230B5561B7921046E4CEFC7FF /* GeofencingRegion.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GeofencingRegion.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9564DCF230B5561B7921046E4CEFC7FF /* GeofencingRegion.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GeofencingRegion.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98FD387DFA194173633270BAF1BCD859 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		A5527831428B5BE93939E3225BE7E1B7 /* Pods-GeofencingRegion_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofencingRegion_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A830E403ED708BC2F813E21F58E36E3D /* Pods-GeofencingRegion_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofencingRegion_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA172EA1A198EEFBE0794EACF7993C02 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		AD0B81AC7DF4855803A0FA70985F8A99 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		ADE3D2737D12E23EDF12B17EECD2C94F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		ADE3D2737D12E23EDF12B17EECD2C94F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B233E28DE9AB7B6F9F42E348E6DC927D /* Pods-GeofencingRegion_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeofencingRegion_Tests.modulemap"; sourceTree = "<group>"; };
 		BA4F6B8C0C04446D593F3F7E516F1FFA /* GeofencingRegion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GeofencingRegion-dummy.m"; sourceTree = "<group>"; };
 		BD9E0F0424C9F9EDA382F4F065DAF41E /* Pods-GeofencingRegion_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofencingRegion_Tests-Info.plist"; sourceTree = "<group>"; };
 		C26B6256FDF5DDF1DC97150E6CE75089 /* GeofencingRegion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GeofencingRegion.modulemap; sourceTree = "<group>"; };
-		CB303786B01E333C3F9C8A770A88CDAC /* Pods_GeofencingRegion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeofencingRegion_Example.framework; path = "Pods-GeofencingRegion_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB303786B01E333C3F9C8A770A88CDAC /* Pods_GeofencingRegion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofencingRegion_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
@@ -122,7 +133,6 @@
 		EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		EEC81E22FC45E268C7FC445C8CA217DB /* Pods-GeofencingRegion_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeofencingRegion_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		F74BB8B24CFD3DBBF4E724922637289B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = GeofencingRegion/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +216,10 @@
 		69D7C6D22B3EAA5F993F72656BF569D5 /* GeofencingRegion */ = {
 			isa = PBXGroup;
 			children = (
-				F74BB8B24CFD3DBBF4E724922637289B /* ReplaceMe.swift */,
+				22FBF62A23BB42EA00F0C2DB /* GeofencePermission.swift */,
+				22FBF62D23BB42EB00F0C2DB /* GeofencingModel.swift */,
+				22FBF62B23BB42EA00F0C2DB /* GeofencingProtocol.swift */,
+				22FBF62C23BB42EB00F0C2DB /* GeofencingRegion.swift */,
 				C1789C13140DF45C471C20126C7BCABF /* Pod */,
 				FF6A594080C667C9EF42B010CEC98DE0 /* Support Files */,
 			);
@@ -240,7 +253,6 @@
 				45E4BEB48F67ECE4946F86A2669DF19F /* Support Files */,
 				820C839EC049005CB82FAAF13AFDCB95 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -482,6 +494,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					4FC7C973DF18DD63F0DEF59D987B96A3 = {
+						LastSwiftMigration = 1100;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -540,8 +557,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FBF62F23BB42EB00F0C2DB /* GeofencePermission.swift in Sources */,
+				22FBF63123BB42EB00F0C2DB /* GeofencingProtocol.swift in Sources */,
+				22FBF63323BB42EB00F0C2DB /* GeofencingRegion.swift in Sources */,
 				4C459C9220982D182076A82B44673707 /* GeofencingRegion-dummy.m in Sources */,
-				76444A3FEFA9E28FDDB0FEA50EB684E4 /* ReplaceMe.swift in Sources */,
+				22FBF63523BB42EB00F0C2DB /* GeofencingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +571,10 @@
 			files = (
 				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
 				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
+				22FBF63223BB42EB00F0C2DB /* GeofencingRegion.swift in Sources */,
+				22FBF63423BB42EB00F0C2DB /* GeofencingModel.swift in Sources */,
+				22FBF62E23BB42EB00F0C2DB /* GeofencePermission.swift in Sources */,
+				22FBF63023BB42EB00F0C2DB /* GeofencingProtocol.swift in Sources */,
 				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
 				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
 				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
@@ -605,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F47B5622013BE06DE3F36468D1AFAAB /* GeofencingRegion.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -625,6 +650,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -851,8 +877,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -926,6 +951,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F47B5622013BE06DE3F36468D1AFAAB /* GeofencingRegion.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
