@@ -128,7 +128,7 @@ extension GeofencingRegion {
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        print("didUpdateLocations", locations.first?.coordinate.latitude,locations.first?.coordinate.longitude)
+        print("didUpdateLocations", locations.first?.coordinate.latitude ?? 0.0 ,locations.first?.coordinate.longitude ?? 0.0)
         currentLocation = locations.first
         delegate?.getLatestCoordiante(location: currentLocation!)
     }
