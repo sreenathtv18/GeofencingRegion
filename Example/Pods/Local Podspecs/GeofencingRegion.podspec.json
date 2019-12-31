@@ -1,0 +1,22 @@
+{
+  "name": "GeofencingRegion",
+  "version": "0.1.0",
+  "summary": "A short description of GeofencingRegion.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sreenathtv18/GeofencingRegion",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sreenathtv18": "sreenath.tv@litmus7.com"
+  },
+  "source": {
+    "git": "https://github.com/sreenathtv18/GeofencingRegion.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GeofencingRegion/Classes/**/*"
+}

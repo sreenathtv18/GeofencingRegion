@@ -39,14 +39,14 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8EA12A8ADE7F019575F42981 /* Pods-GeofencingRegion_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofencingRegion_Tests.release.xcconfig"; path = "Target Support Files/Pods-GeofencingRegion_Tests/Pods-GeofencingRegion_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9369B30C8AF8005F19251053 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9369B30C8AF8005F19251053 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9C49B716E3A73B7FEFE0EF83 /* Pods-GeofencingRegion_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofencingRegion_Example.release.xcconfig"; path = "Target Support Files/Pods-GeofencingRegion_Example/Pods-GeofencingRegion_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CEFBE418D451C17062AA2B86 /* Pods_GeofencingRegion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofencingRegion_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D133EA91F9D78D4641873782 /* Pods-GeofencingRegion_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofencingRegion_Example.debug.xcconfig"; path = "Target Support Files/Pods-GeofencingRegion_Example/Pods-GeofencingRegion_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D296980AA8213CDF5A0CA204 /* Pods_GeofencingRegion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofencingRegion_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0095A7EBF1CD615F15FFAF0 /* GeofencingRegion.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GeofencingRegion.podspec; path = ../GeofencingRegion.podspec; sourceTree = "<group>"; };
+		E0095A7EBF1CD615F15FFAF0 /* GeofencingRegion.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GeofencingRegion.podspec; path = ../GeofencingRegion.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E71736104021536DEA6FEE98 /* Pods-GeofencingRegion_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofencingRegion_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GeofencingRegion_Tests/Pods-GeofencingRegion_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F369619E8A9E55E49996B2C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F369619E8A9E55E49996B2C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				E71736104021536DEA6FEE98 /* Pods-GeofencingRegion_Tests.debug.xcconfig */,
 				8EA12A8ADE7F019575F42981 /* Pods-GeofencingRegion_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

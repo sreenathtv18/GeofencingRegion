@@ -1,0 +1,6 @@
+framework module Pods_GeofencingRegion_Example {
+  umbrella header "Pods-GeofencingRegion_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
