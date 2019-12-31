@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GeofencingRegion'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Geofencing 20 Region in iOS.'
 
 # This description is used to generate tags and improve search results.

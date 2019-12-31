@@ -24,13 +24,13 @@ public class GeofencingRegion: NSObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         return locationManager
     }()
-    public var currentLocation: CLLocation? {
+    private var currentLocation: CLLocation? {
         didSet {
             evaluateClosestRegions()
         }
     }
     public weak var delegate: GeofencingProtocol?
-    public var enteredRegion: CLRegion?
+    private var enteredRegion: CLRegion?
     
     // MARK: Life Cycle
     public override init() {
@@ -154,9 +154,24 @@ extension GeofencingRegion {
         exitGeofence(geofence: region, manager: manager)
     }
     
+    public func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
+        
+            switch state {
+            case .inside:
+                enterGeofence(geofence: region, manager: manager)
+                break
+            case .outside:
+                exitGeofence(geofence: region, manager: manager)
+                break
+            case .unknown:
+                print("Unknown state for geofence:",region)
+                break
+            default:
+                break
+            }
+        }
     
-    
-    public func enterGeofence(geofence: CLRegion, manager: CLLocationManager) {
+     private func enterGeofence(geofence: CLRegion, manager: CLLocationManager) {
     
         print("didEnterRegion", geofence.identifier)
         enteredRegion = geofence
@@ -165,7 +180,7 @@ extension GeofencingRegion {
     
     
     
-    public func exitGeofence(geofence: CLRegion, manager: CLLocationManager) {
+     private func exitGeofence(geofence: CLRegion, manager: CLLocationManager) {
     
         print("didExitRegion", geofence.identifier)
         if enteredRegion == geofence {
