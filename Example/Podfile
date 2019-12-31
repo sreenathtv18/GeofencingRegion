@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GeofencingRegion_Example' do
+  pod 'GeofencingRegion', :path => '../'
+
+  target 'GeofencingRegion_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
