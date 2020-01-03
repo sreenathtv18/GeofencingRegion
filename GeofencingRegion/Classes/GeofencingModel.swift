@@ -11,8 +11,8 @@ import CoreLocation
 
 public struct Coordinate {
     
-    let latitude: CLLocationDegrees
-    let longitude: CLLocationDegrees
+    public let latitude: CLLocationDegrees
+    public let longitude: CLLocationDegrees
     let radius: CLLocationDistance
     let identifier: String
 
@@ -20,7 +20,7 @@ public struct Coordinate {
 
 public class CircularRegion {
     
-    var coordinate: Coordinate
+    public var coordinate: Coordinate
     var distance: Double = 0.0
     
     lazy var region: CLCircularRegion = { [unowned self] in
@@ -36,7 +36,7 @@ public class CircularRegion {
         self.coordinate = location
     }
     
-    static func loadDummyData() -> [CircularRegion] {
+    public static func loadDummyData() -> [CircularRegion] {
         // Dummy data
         let region1 = CircularRegion(location: Coordinate(latitude: 10.015142, longitude: 76.345530, radius: 100, identifier: "1"))
         let region2 = CircularRegion(location: Coordinate(latitude: 10.015142, longitude: 76.345530, radius: 100, identifier: "2"))

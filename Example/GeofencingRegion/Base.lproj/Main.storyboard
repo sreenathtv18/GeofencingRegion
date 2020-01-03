@@ -19,29 +19,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D2V-tN-EX2">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q3E-UO-NGd">
+                                <rect key="frame" x="16" y="0.0" width="343" height="567"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8np-Hn-fWN">
+                                <rect key="frame" x="16" y="572" width="343" height="95"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlG-ZF-qfP">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="95"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Get Near Store">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getNearByStore:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q6F-mo-RLC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dlG-ZF-qfP" firstAttribute="top" secondItem="8np-Hn-fWN" secondAttribute="top" id="0KP-hC-Os4"/>
+                                    <constraint firstItem="dlG-ZF-qfP" firstAttribute="leading" secondItem="8np-Hn-fWN" secondAttribute="leading" id="4zT-wP-zA1"/>
+                                    <constraint firstAttribute="bottom" secondItem="dlG-ZF-qfP" secondAttribute="bottom" id="F16-9e-WUf"/>
+                                    <constraint firstItem="dlG-ZF-qfP" firstAttribute="centerY" secondItem="8np-Hn-fWN" secondAttribute="centerY" id="N76-xm-L9o"/>
+                                    <constraint firstItem="dlG-ZF-qfP" firstAttribute="centerX" secondItem="8np-Hn-fWN" secondAttribute="centerX" id="h0K-pB-0gV"/>
+                                    <constraint firstAttribute="trailing" secondItem="dlG-ZF-qfP" secondAttribute="trailing" id="pGE-Yb-W8K"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="D2V-tN-EX2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Pbr-3H-pzo"/>
-                            <constraint firstItem="D2V-tN-EX2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="byV-z2-z9N"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="D2V-tN-EX2" secondAttribute="bottom" id="fVX-fL-kFH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="D2V-tN-EX2" secondAttribute="trailing" id="pTm-j7-PMk"/>
+                            <constraint firstItem="8np-Hn-fWN" firstAttribute="top" secondItem="Q3E-UO-NGd" secondAttribute="bottom" constant="5" id="5BS-WF-8gP"/>
+                            <constraint firstItem="Q3E-UO-NGd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="AAj-gF-mF2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8np-Hn-fWN" secondAttribute="trailing" id="D0C-U3-tPW"/>
+                            <constraint firstItem="Q3E-UO-NGd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Vv3-Uc-Zcd"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Q3E-UO-NGd" secondAttribute="bottom" constant="100" id="bxD-jQ-gq6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q3E-UO-NGd" secondAttribute="trailing" id="eCD-28-9Ry"/>
+                            <constraint firstItem="8np-Hn-fWN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jjl-o9-9AK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="8np-Hn-fWN" secondAttribute="bottom" id="u51-D3-Nge"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="locationTextView" destination="D2V-tN-EX2" id="diX-28-zaR"/>
+                        <outlet property="mapView" destination="Q3E-UO-NGd" id="i5h-kC-hDI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="133"/>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

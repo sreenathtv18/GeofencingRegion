@@ -9,16 +9,19 @@
 import Foundation
 import CoreLocation
 
-class GeofencePermission {
+public class GeofencePermission {
     
 
     // to check status of locations
-    static func enableLocationServices(locationManager: CLLocationManager?) {
+    public static func enableLocationServices(locationManager: CLLocationManager?) {
+        
+        guard let _locationManager: CLLocationManager = locationManager else { return }
         
         switch CLLocationManager.authorizationStatus() {
+        
         case .notDetermined:
             // Request when-in-use authorization initially
-            locationManager?.requestAlwaysAuthorization()
+            _locationManager.requestAlwaysAuthorization()
             break
             
         case .restricted, .denied:
@@ -38,7 +41,7 @@ class GeofencePermission {
             break
             
         default:
-            locationManager?.requestAlwaysAuthorization()
+            _locationManager.requestAlwaysAuthorization()
         }
     }
 }

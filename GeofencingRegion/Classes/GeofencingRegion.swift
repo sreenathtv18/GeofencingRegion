@@ -24,9 +24,9 @@ public class GeofencingRegion: NSObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         return locationManager
     }()
-    private var currentLocation: CLLocation? {
+    public var currentLocation: CLLocation? {
         didSet {
-            evaluateClosestRegions()
+            startGeofencing()
         }
     }
     public weak var delegate: GeofencingProtocol?
@@ -74,10 +74,11 @@ public class GeofencingRegion: NSObject, CLLocationManagerDelegate {
     
     
     
-    public func evaluateClosestRegions() {
+    public func evaluateClosestRegions(regions: [CircularRegion]) -> [CircularRegion] {
         
+        var shortestRegions: [CircularRegion] = []
         //Calulate distance of each region's center to currentLocation
-        allRegions = allRegions.map({ storableRegion in
+        shortestRegions = regions.map({ storableRegion in
             let distance = currentLocation?.distance(from: CLLocation(latitude: storableRegion.coordinate.latitude, longitude: storableRegion.coordinate.longitude))
             storableRegion.distance = distance ?? 0.0
             return storableRegion
@@ -85,17 +86,23 @@ public class GeofencingRegion: NSObject, CLLocationManagerDelegate {
 
 
         //sort and get 20 closest
-        let twentyNearbyRegions = allRegions
+        let twentyNearbyRegions = regions
             .sorted{ $0.distance < $1.distance }
             .prefix(20)
-
+        let twentyRegions: [CircularRegion] = Array(twentyNearbyRegions)
+        
+        return twentyRegions
+    }
+    
+    func startGeofencing() {
+        let twentyRegions = evaluateClosestRegions(regions: allRegions)
         stopMonitoringRegion()
-        startMonitorRegion(twentyNearbyRegions: twentyNearbyRegions)
+        startMonitorRegion(twentyNearbyRegions: twentyRegions)
+
     }
     
     
-    
-    public func startMonitorRegion(twentyNearbyRegions: ArraySlice<CircularRegion>) {
+    public func startMonitorRegion(twentyNearbyRegions: [CircularRegion]) {
 
         twentyNearbyRegions.forEach {
             locationManager?.startMonitoring(for: $0.region)
