@@ -162,13 +162,13 @@ extension GeofencingRegion {
     }
     
     public func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
-        
+
             switch state {
             case .inside:
                 enterGeofence(geofence: region, manager: manager)
                 break
             case .outside:
-                exitGeofence(geofence: region, manager: manager)
+                 exitGeofence(geofence: region, manager: manager)
                 break
             case .unknown:
                 print("Unknown state for geofence:",region)
@@ -181,8 +181,10 @@ extension GeofencingRegion {
      private func enterGeofence(geofence: CLRegion, manager: CLLocationManager) {
     
         print("didEnterRegion", geofence.identifier)
-        enteredRegion = geofence
-        delegate?.didEnterRegion()
+        if enteredRegion != geofence {
+            enteredRegion = geofence
+            delegate?.didEnterRegion()
+        }
     }
     
     

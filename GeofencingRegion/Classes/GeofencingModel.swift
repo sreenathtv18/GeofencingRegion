@@ -38,11 +38,11 @@ public class CircularRegion {
     
     public static func loadDummyData() -> [CircularRegion] {
         // Dummy data
-        let region1 = CircularRegion(location: Coordinate(latitude: 10.015142, longitude: 76.345530, radius: 100, identifier: "1"))
-        let region2 = CircularRegion(location: Coordinate(latitude: 10.015142, longitude: 76.345530, radius: 100, identifier: "2"))
-        let region3 = CircularRegion(location: Coordinate(latitude: 9.994811, longitude: 76.353301, radius: 100, identifier: "3"))
-        let region4 = CircularRegion(location: Coordinate(latitude: 9.998886, longitude: 76.353301, radius: 100, identifier: "4"))
-        let region5 = CircularRegion(location: Coordinate(latitude: 10.015718, longitude: 76.364375, radius: 100, identifier: "5"))
+        let region1 = CircularRegion(location: Coordinate(latitude: 10.015142, longitude: 76.345530, radius: 1000, identifier: "1"))
+        let region2 = CircularRegion(location: Coordinate(latitude: 10.015142, longitude: 76.345530, radius: 1000, identifier: "2"))
+        let region3 = CircularRegion(location: Coordinate(latitude: 9.994811, longitude: 76.353301, radius: 1000, identifier: "3"))
+        let region4 = CircularRegion(location: Coordinate(latitude: 9.998886, longitude: 76.353301, radius: 1000, identifier: "4"))
+        let region5 = CircularRegion(location: Coordinate(latitude: 10.015718, longitude: 76.364375, radius: 1000, identifier: "5"))
         
         return [region1, region2, region3, region4, region5]
 
