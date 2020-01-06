@@ -25,6 +25,7 @@ class ViewController: UIViewController, GeofencingProtocol, MKMapViewDelegate {
     }
     
     @IBAction func getNearByStore(_ sender: UIButton) {
+
         let allRegions = CircularRegion.loadDummyData()
         let closestRegion = GeofencingRegion.shared.evaluateClosestRegions(regions: allRegions)
         loadMapView(regions: closestRegion)
@@ -104,12 +105,20 @@ class ViewController: UIViewController, GeofencingProtocol, MKMapViewDelegate {
             }
         }
     }
+    
+    
+    
+    func removeOverlay(mapView: MKMapView?) {
+        guard let _mapView = mapView else {return}
+        _mapView.removeOverlays(_mapView.overlays)
+    }
 }
 
 extension ViewController {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let location = view.annotation?.coordinate
+        removeOverlay(mapView: mapView)
         findRoute(destination: location)
 
     }

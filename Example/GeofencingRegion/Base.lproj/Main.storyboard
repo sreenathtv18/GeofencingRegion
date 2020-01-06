@@ -27,23 +27,23 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlG-ZF-qfP">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="95"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Get Near Store">
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Get near store">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="getNearByStore:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q6F-mo-RLC"/>
+                                            <action selector="getNearByStore:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ip5-dv-PiG"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="dlG-ZF-qfP" firstAttribute="top" secondItem="8np-Hn-fWN" secondAttribute="top" id="0KP-hC-Os4"/>
-                                    <constraint firstItem="dlG-ZF-qfP" firstAttribute="leading" secondItem="8np-Hn-fWN" secondAttribute="leading" id="4zT-wP-zA1"/>
-                                    <constraint firstAttribute="bottom" secondItem="dlG-ZF-qfP" secondAttribute="bottom" id="F16-9e-WUf"/>
+                                    <constraint firstAttribute="trailing" secondItem="dlG-ZF-qfP" secondAttribute="trailing" id="Cmw-X4-fdY"/>
                                     <constraint firstItem="dlG-ZF-qfP" firstAttribute="centerY" secondItem="8np-Hn-fWN" secondAttribute="centerY" id="N76-xm-L9o"/>
+                                    <constraint firstItem="dlG-ZF-qfP" firstAttribute="leading" secondItem="8np-Hn-fWN" secondAttribute="leading" id="Pgd-xw-ixP"/>
                                     <constraint firstItem="dlG-ZF-qfP" firstAttribute="centerX" secondItem="8np-Hn-fWN" secondAttribute="centerX" id="h0K-pB-0gV"/>
-                                    <constraint firstAttribute="trailing" secondItem="dlG-ZF-qfP" secondAttribute="trailing" id="pGE-Yb-W8K"/>
+                                    <constraint firstItem="dlG-ZF-qfP" firstAttribute="top" secondItem="8np-Hn-fWN" secondAttribute="top" id="hRh-TJ-syY"/>
+                                    <constraint firstAttribute="bottom" secondItem="dlG-ZF-qfP" secondAttribute="bottom" id="mtu-sf-lKa"/>
                                 </constraints>
                             </view>
                         </subviews>
