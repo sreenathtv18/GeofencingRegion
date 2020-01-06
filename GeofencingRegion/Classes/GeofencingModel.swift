@@ -32,7 +32,7 @@ public class CircularRegion {
         return geofenceRegion
     }()
     
-    init(location: Coordinate) {
+    public init(location: Coordinate) {
         self.coordinate = location
     }
     
